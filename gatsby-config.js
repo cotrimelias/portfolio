@@ -1,3 +1,5 @@
+require("dotenv/config")
+
 module.exports = {
     siteMetadata: {
         siteUrl: "https://www.yourdomain.tld",
@@ -6,8 +8,8 @@ module.exports = {
     plugins: [{
             resolve: "gatsby-source-contentful",
             options: {
-                accessToken: CONTENTFUL_ACCESS_TOKEN,
-                spaceId: CONTENTFUL_SPACE_ID,
+                accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+                spaceId: process.env.CONTENTFUL_SPACE_ID,
             },
         },
         "gatsby-plugin-sass",
@@ -16,7 +18,7 @@ module.exports = {
         {
             resolve: "gatsby-plugin-google-analytics",
             options: {
-                trackingId: GOOGLE_ANALYTICS_ID,
+                trackingId: process.env.GOOGLE_ANALYTICS_ID,
             },
         },
         "gatsby-plugin-react-helmet",
