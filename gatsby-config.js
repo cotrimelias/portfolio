@@ -6,8 +6,8 @@ module.exports = {
     plugins: [{
             resolve: "gatsby-source-contentful",
             options: {
-                accessToken: "3g84W_-K9kXAEobOtqecZnKnwkKZm6ORR6VhXCI8kz4",
-                spaceId: "ezg6vznwq1va",
+                accessToken: CONTENTFUL_ACCESS_TOKEN,
+                spaceId: CONTENTFUL_SPACE_ID,
             },
         },
         "gatsby-plugin-sass",
@@ -16,7 +16,7 @@ module.exports = {
         {
             resolve: "gatsby-plugin-google-analytics",
             options: {
-                trackingId: "G-RX3DYPSM90",
+                trackingId: GOOGLE_ANALYTICS_ID,
             },
         },
         "gatsby-plugin-react-helmet",
