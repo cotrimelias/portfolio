@@ -2,8 +2,8 @@ require("dotenv/config")
 
 module.exports = {
     siteMetadata: {
-        siteUrl: "https://www.yourdomain.tld",
-        title: "Elias Cotrim Portfolio",
+        siteUrl: "https://www.eliascotrim.com/",
+        title: "Elias Cotrim | Portfolio",
     },
     plugins: [{
             resolve: "gatsby-source-contentful",
