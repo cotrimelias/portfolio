@@ -1,7 +1,40 @@
 body {
-    background-color: aquamarine;
+    background-color: rgb(247, 247, 247);
 }
 
 main h1 {
     color: white;
+}
+
+.headingStyle {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    animation-name: headingentrance;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    h1 {
+        font-family: "Coolvetica";
+        color: black;
+        font-weight: 400;
+        font-size: 12em;
+        line-height: 0.8em;
+    }
+    h1::after {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+}
+
+@keyframes headingentrance {
+    0% {
+        transform: translateY(-20vw);
+    }
+    25% {
+        transform: translateY(-1.5vw);
+    }
+    100% {
+        transform: translateY(0vw);
+    }
 }
